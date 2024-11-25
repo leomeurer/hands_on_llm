@@ -1,0 +1,6 @@
+/venv
+/scratch
+/.idea
+*.idea
+erro_log.txt
+metadados_processos.xlsx
