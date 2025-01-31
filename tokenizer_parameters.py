@@ -10,25 +10,25 @@ for text in texts:
 
 # Tokenizando SEM padding
 tokens_no_padding = tokenizer(texts)
-print(tokens_no_padding)
+print("Tokens without padding:", tokens_no_padding)
 
+# Tokenizando COM padding
 tokens_with_padding = tokenizer(texts, padding=True)
-print(tokens_with_padding)
+print("Tokens with padding:   ", tokens_with_padding)
 
 
 
 #####################
 
-long_text = "Era uma vez um menino que sabia contar, ele contava: " * 100 #texto longo
+long_text = "Era uma vez um menino que sabia contar, ele contava: " * 30 #texto longo
 
 # Tokenizando SEM truncation
 tokens_no_truncation = tokenizer(long_text)
-print(tokens_no_truncation)
-
+print("Tokens without truncation:", tokens_no_truncation)
 
 # Tokenizando COM truncation
 tokens_with_truncation = tokenizer(long_text, truncation=True)
-print(tokens_with_truncation)
+print("Tokens with truncation:   ", tokens_with_truncation)
 
 ###################
 
