@@ -21,7 +21,8 @@ model = AutoModelForCausalLM.from_pretrained(
     trust_remote_code=True,
     attn_implementation="eager"
 )
-
+# The tokenizer is in charge of splitting the input text into tokens before
+# feeding it to the generative model.
 tokenizer = AutoTokenizer.from_pretrained("microsoft/Phi-3-mini-4k-instruct")
 
 from transformers import pipeline
