@@ -4,3 +4,4 @@
 *.idea
 erro_log.txt
 metadados_processos.xlsx
+/.env
